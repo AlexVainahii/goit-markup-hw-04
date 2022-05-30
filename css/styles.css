@@ -133,6 +133,15 @@ body {
   padding-top: 200px;
   text-align: center;
   background-color: var(--primary-background-color);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -176,10 +185,40 @@ body {
 .tasks-list {
   display: flex;
 }
+
 .tasks-item {
   width: 270px;
   text-align: left;
 }
+
+.tasks-item::before {
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-size: contain;
+  display: block;
+  background-color: var(--team-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+  margin-bottom: 30px;
+}
+
+.antena::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 .tasks-item + .tasks-item {
   margin-left: 30px;
 }
