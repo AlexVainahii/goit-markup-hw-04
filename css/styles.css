@@ -477,6 +477,7 @@ body {
   text-align: start;
 }
 
+.portfolio-project-link:hover,
 .portfolio-project-link:focus,
 .portfolio-project-item:hover,
 .portfolio-project-item:focus {
