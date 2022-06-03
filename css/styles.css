@@ -203,34 +203,13 @@ body {
 .tasks-item {
   width: 270px;
   text-align: left;
+  background-color: var(--background-color);
 }
 
-.tasks-item::before {
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-size: contain;
-  display: block;
-  background-color: var(--team-background-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px 70px;
-  margin-bottom: 30px;
-}
-
-.antena::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-.astronaut::before {
-  background-image: url(../images/astronaut.svg);
+.tasks-item-icon {
+  margin: 0 auto;
+  margin-bottom: 65px;
+  fill: var(--icon-color);
 }
 
 .tasks-item + .tasks-item {
